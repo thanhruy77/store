@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/men.js"></script>
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Thêm Sản Phẩm</title>
+
+</head>
+
+<body>
+
+
+    <style>
+       *{
+            box-sizing:  border-box;
+            padding: 0;
+            margin: 0;    }
+    
+    
+        .them-moi-san-pham{
+            width: 50%;
+            border: 1px solid #ddd;
+            margin: auto;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 2px 2px 5px #ddd;
+    
+        }
+        .them-moi-san-pham label, input{
+            width: 100%;
+            display: block;
+    
+        }
+        .them-moi-san-pham label{
+            margin-top: 20px;
+    
+        }
+        .them-moi-san-pham input{
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
+        .them-moi-san-pham button{
+            width: 100%;
+            margin-top:  30px;
+            padding: 10px 20px;
+            border:1px #ddd;
+            background-color: #006633;;
+            color: #fff;
+        }
+        .them-moi-san-pham button:hover{
+            background-color: green;
+    
+        }
+        .them-moi-san-pham .loai{
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            margin-top: 30px;
+            width: 100%;
+            
+        }
+    </style>
+    <body>  
+
+
+        <html>
+            <head>
+                <title>Điện thoại di động - THANHDUY</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script src="https://kit.fontawesome.com/3875455e82.js" crossorigin="anonymous"></script>
+                <link rel="stylesheet" type="text/css" href="css/admin.css">
+                <link rel="stylesheet" href="css/adminsp.css">
+                <script src="js/admin.js"></script>
+            </head>
+            <body style="background-color:#EEEEEE">
+                <div id="t">
+                    <div class="logo_ch">
+                        <i class="fa fa-bars"></i>
+                        <a>
+                            <span><strong>THANHDUY</strong></span>
+                        </a>
+                    </div>
+                    <div class="drowdown-open">
+                        <label for="dorwdown-title">Xin chào: Admin</label>
+                        <input type="checkbox" id="dorwdown-title">
+                        <div class="dorwdown-iteam">
+                            <ul>
+                                <li><a class="item" href="#" title="Thông tin tài khoản">Thông tin</a></li>
+                                <li><a class="item" href="dangnhap.html" title="Đăng xuất về trang mua hàng">Đăng xuất</a></li>
+                            </ul>    
+                        </div>
+                    </div>
+                  
+                    </div>
+                </div>
+                <div id="main">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="../index.html">Trang Chủ</a></li>
+                            <li><a id="sanpham" href="admin.html">Sản Phẩm</a></li>
+                            <li><a id="sanpham" href="donhang.html">Đơn hàng</a></li>
+                            <li><a id="donhang" href="dsdonhangxacnhan.html">Đơn Đã Xác nhận</a></li>
+                            <li><a id="donhang" href="danggiaohang.html">Đơn Đang Giao</a></li>
+                            <li><a id="donhang" href="dagiaohang.html">Đơn Đã Giao</a></li>
+             
+        
+            
+                        </ul>
+                    </div>
+                    <div id="san_pham" style="display: block;">
+                        <div class="from_sp">
+                            <div class="new">
+                                <div class="nameds"><h2>Thêm Mới Sản Phẩm</h2></div>
+                                <div class="namebtn">
+                                    
+                                    <button class="btn"  type="submit"><a href="add.html"><font color="#DCDCDC">Thêm Mới</font></a></button>
+                                </div>
+                            </div>
+                            <div class="tk col-12">
+                               
+                              
+                            <div class="list-sp col-12">
+                                <table id="myTable" cellspacing='0' cellpadding='4'>
+                                    <tr>
+                                          
+
+
+                                        <div class="them-moi-san-pham">
+                                            <form onsubmit="return taosanpham()"method="POST" autocomplete="on" name="contactForm"> 
+                                                <input type="text" id="hinhanh" placeholder="Hình Ảnh Sản Phẩm" required >
+                                                <input type="text" id="ten" placeholder="Tên Sản Phẩm" required>                 
+                                                <input type="text" id="giagoc"required pattern="[0-9]{1,30}" placeholder="Giá Gốc Sản Phẩm" title="Giá sản phẩm phải nhập bằng số">          
+                                                <input type="text" id="giamgia"required pattern="[0-9]{1,30}" placeholder="Giá Bán Sản Phẩm" title="Giá sản phẩm phải nhập bằng số">           
+                                                <select class="loai" name="loai" id="loai">
+                                                   <option class="chon" value="men" id="men" >Men</option>
+                                                   <option class="chon" value="women" id="women">Women</option>
+                                                   <option class="chon" value="perfume" id="perfume">Perfume</option>
+                                               </select>
+                                               <button type="submit" style="cursor: pointer;">Tạo</button>
+                                            </form>
+                                           </div>
+                                
+
+                                           
+                                    </tr>
+                                </table>
+                            
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    </div>
+                </div>
+                </div>
+           
+        
+
+
+
+           <script>
+            
+            // lấy danh sách sản phẩm đã có trong localstorage
+
+              var danhsachsanpham = JSON.parse( localStorage.getItem('dssanpham'));
+              if(danhsachsanpham==null)
+                danhsachsanpham = new Array();
+              console.log(danhsachsanpham);
+
+     
+            
+              
+              function taosanpham(){  
+ 
+                   var nodehinhanh =document.getElementById('hinhanh');
+                   var hinhanh =nodehinhanh.value;
+                   nodehinhanh.value='';
+  
+                   var nodeten = document.getElementById('ten');
+                   var ten=nodeten.value;
+                   nodeten.value='';
+
+                   var nodegiagoc =document.getElementById('giagoc');
+                   var giagoc= parseInt (nodegiagoc.value);
+                   nodegiagoc.value='';
+                 
+                   var nodegiamgia =document.getElementById('giamgia');
+                   var giamgia=parseInt(nodegiamgia.value);
+                   nodegiamgia.value='';
+
+                   var nodeloai =document.getElementById('loai');
+                   var loai=nodeloai.value;
+                   nodeloai.value='';
+                   alert('tạo sản phẩm thành công!!!');
+    /*
+    tạo đối tượng sản phẩm
+    */
+    var sanpham = taodoituongsanpham(hinhanh,ten,giagoc,giamgia,loai,null);
+    console.log(sanpham)
+                
+    // console.log('ten sản phẩm vừa nhập là: '+sanpham.ten,'giá bán là: '+ sanpham.tinhgiaban())
+    
+
+                // đưa sản phẩm vào danh sách
+
+            danhsachsanpham.push(sanpham);
+            console.log('danh sách các sản phẩm là: ');
+            console.log(danhsachsanpham)
+
+
+            // lưu trữ danh sách sản phẩm xuống localstorgare
+            var jsondanhsachsanpham = JSON.stringify(danhsachsanpham)
+             localStorage.setItem('dssanpham',jsondanhsachsanpham);
+             location.reload();
+
+                }
+            
+           </script>
+
+</body>
+</html>

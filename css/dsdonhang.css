@@ -1,0 +1,155 @@
+.donhang {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(235, 229, 229, 0.1);
+    max-width: auto;
+
+}
+
+#donhang-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+}
+
+.donhang .tach-sanpham {
+    margin-top: 5px;
+}
+
+.donhang.collapsed .sanpham {
+    display: none;
+}
+
+.donhang.collapsed .diachi {
+    display: none;
+}
+
+.donhang.collapsed .sdt {
+    display: none;
+}
+
+.donhang.collapsed .tach-sanpham {
+    display: none;
+}
+
+.chitiet-button {
+    background-color: #41d82c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.chitiet-button:hover {
+    background-color: #ffcc00;
+    color: #ffffff;
+}
+
+.chitiet-button:active {
+    background-color: #3e8e41;
+}
+
+.donhang p {
+    margin: 10px 0;
+}
+
+.sanpham {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sanpham img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-xoa {
+    background-color: #f44336;
+}
+
+.btn-xoa:hover {
+    background-color: #d32f2f;
+}
+
+.sanpham .soluong {
+
+    margin-left: auto;
+}
+.sanpham .tonggia {
+    margin-left: 30px;
+    color: red;
+}
+
+/* Dialog CSS */
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.thongtin {
+    margin-bottom: 10px;
+  }
+
+  .trangthai {
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+
+.dialog-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 75%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>ADMIN - STORE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3875455e82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminsp.css">
+    <link rel="stylesheet" href="../css/dsdonhang.css">
+</head>
+
+<body style="background-color:#EEEEEE">
+    <div id="t">
+        <div class="logo_ch">
+            <i class="fa fa-bars"></i>
+            <a>
+                <span><strong>STORE - THANHDUY</strong></span>
+            </a>
+        </div>
+        <div class="drowdown-open">
+            <label for="dorwdown-title">Xin chào: Admin</label>
+            <input type="checkbox" id="dorwdown-title">
+            <div class="dorwdown-iteam">
+                <ul>
+                    <li><a class="item" href="#" title="Thông tin tài khoản">Thông tin</a></li>
+                    <li><a class="item" href="dangnhap.html" title="Đăng xuất về trang mua hàng">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div id="main">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a id="sanpham" href="admin.html">Sản Phẩm</a></li>
+                <li><a id="sanpham" href="donhang.html">Đơn hàng</a></li>
+                <li><a id="donhang" href="dsdonhangxacnhan.html">Đơn Đã Xác nhận</a></li>
+                <li><a id="donhang" href="danggiaohang.html">Đơn Đang Giao</a></li>
+                <li><a id="donhang" href="dagiaohang.html">Đơn Đã Giao</a></li>
+
+
+
+            </ul>
+        </div>
+        <div id="san_pham" style="display: block;">
+            <div class="from_sp">
+                <div class="new">
+                    <div class="nameds">
+                        <h2>Danh sách đơn hàng đã xác nhận</h2>
+                    </div>
+                    <div class="namebtn">
+
+                        <button class="btn" type="submit"><a href="add.html">
+                                <font color="#DCDCDC">Thêm Mới</font>
+                            </a></button>
+                    </div>
+                </div>
+                <div class="tk col-12">
+
+
+
+
+                    <!-- hiển thị danh sách đơn hàng -->
+                    <div class="list-sp col-12">
+                        <table id="myTable" cellspacing='0' cellpadding='4'>
+                            <tr>
+                                <div id="donhang-container">
+                                    <div id="dialog" class="dialog">
+                                        <div class="dialog-content">
+                                            <span class="close">&times;</span>
+                                            <h2>Thông tin đơn hàng đã xác nhận</h2>
+                                            <br>
+                                            <hr>
+                                            <br>
+                                            <div id="product-info">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script src="../js/donhangxacnhan.js"></script>
+
+                            </tr>
+                        </table>
+
+                    </div>
+                    <!-- kết thúc danh sách đơn Hàng -->
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="don_hang" class="from_donhang" style="display: none;">
+        <div class="from_sp">
+            <div class="new">
+                <div class="nameds">
+                    <h2>Danh sách đơn hàng</h2>
+                </div>
+            </div>
+        </div>
+        <div class="list-sp col-12">
+            </table>
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>

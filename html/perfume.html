@@ -16,9 +16,10 @@
       rel="stylesheet">
       <!--Подключаем css файл!-->
       <link rel="stylesheet" href="../css/styleforperfume.css">
+      <link rel="stylesheet" href="../css/csssp.css">
+      <script src="../js/perfume.js"></script>
 </head>
 <body>
-
 
     <header>
         <div class="container">
@@ -81,7 +82,11 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+
+
+
+
+        <!-- <div class="section">
             <div class="container">
                 <div class="category">
                     <a href="#" class="category__link">
@@ -99,79 +104,40 @@
 
                 </div>
             </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <h2 class="section__title">WOMEN’S FASHION</h2>
-                <p class="section__subtitle">Shop our new arrivals from established brands</p>
-                <div class="new-product-wrap">
-                    <div class="new-product"> 
-                        <img src="../images/Mask_Group_Gerl.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                    <div class="new-product"> 
-                        <img src="../images/Mask_Group_Girl1.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                    <div class="new-product"> 
-                        <img src="../images/Mask_Group_Girl2.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                    <div class="new-product"> 
-                        <img src="../images/Mask_Group_Gerl3.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
+
+
+
         <div class="section">
             <div class="container">
                 <h2 class="section__title">MEN’S FASHION</h2>
                 <p class="section__subtitle">Shop our new arrivals from established brands</p>
                 <div class="new-product-wrap">
-                    <div class="new-product"> 
-                        <img src="../images/men1.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                    <div class="new-product"> 
-                        <img src="../images/men2.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                    <div class="new-product"> 
-                        <img src="../images/smoll_men4.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
-                    <div class="new-product"> 
-                        <img src="../images/men3.jpg" class="new-product__img" alt="#">
-                        <span class="new-product__brand">IGURE</span>
-                        <a href="#" class="new-product__link">GREEN MUSCLE FIT POLO SHIRT</a>
-                        <span class="new-product__price_old">$229.00</span>
-                        <span class="new-product__price_new">$129.00</span>
-                    </div>
+                        <!-- danh sach san pham-->
+                    <section id="products">
+                        <!-- hiển thị danh sách sản phẩm-->
+                        <div class="items">
+                        </div>
+                    </section>
+                        <!-- danh sach san pham-->
                 </div>
             </div>
         </div>
+        
+    <script>                          
+        // lấy danh sách sản phẩm dưới localstorage
+        var jsondanhsachsanpham = localStorage.getItem('dssanpham')
+        var danhsachsanpham =JSON.parse(jsondanhsachsanpham)
+        console.log(danhsachsanpham)
+        // chuyển danh sách object xang html
+        var HTML = chuyendanhsachdoituongsanphamthanhhtml(danhsachsanpham);
+        // gán html vào section products
+        var nodeproducts = document.getElementById('products');
+        nodeproducts.innerHTML = HTML;
+        </script>
+
+
+
         <div class="section">
             <div class="container">
                 <h2 class="section__title">AVONE STYLES</h2>
@@ -181,7 +147,7 @@
                         
                     </div>
                     <div class="style-right">
-                        <a href="#" class="style__link">SHOW WOMEN’S DRESS</a>
+                        <a href="women.html" class="style__link">SHOW WOMEN’S DRESS</a>
                     </div>
                 </div>
             </div>
@@ -196,6 +162,33 @@
             </div>
         </div>
     </main>
+
+
+
+
+
+    <script>                          
+    // lấy danh sách sản phẩm dưới localstorage
+    var jsondanhsachsanpham = localStorage.getItem('dssanpham')
+    var danhsachsanpham =JSON.parse(jsondanhsachsanpham)
+    console.log(danhsachsanpham)
+    // chuyển danh sách object xang html
+    var HTML = chuyendanhsachdoituongsanphamthanhhtml(danhsachsanpham);
+    // gán html vào section products
+    var nodeproducts = document.getElementById('products');
+    nodeproducts.innerHTML = HTML;
+    </script>
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <div>
             <div class="footer-main">

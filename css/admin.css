@@ -1,0 +1,387 @@
+body{
+	font-family:arial;;
+	background-repeat:repeat;
+	background-position: center;
+	background-attachment:fixed;
+	margin:0px;
+}
+*{
+	box-sizing: border-box;
+}
+
+[class*="col-"]{
+	float: right;
+	padding: 15px;
+	border: 1px solid red;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+@media only screen and (max-width: 768px){	
+	.col-s-1{width: 8.33%;}
+	.col-s-2{width: 16.66%;}
+	.col-s-3{width: 25%;}
+	.col-s-4{width: 33.33%;}
+	.col-s-5{width: 41.66%;}
+	.col-s-6{width: 50%;}
+	.col-s-7{width: 58.33%;}
+	.col-s-8{width: 66.66%;}
+	.col-s-9{width: 75%;}
+	.col-s-10{width: 83.33%;}
+	.col-s-11{width: 91.66%;}
+	.col-s-12{width: 100%;}
+	
+	#nav{display:none;}
+}
+/* for mobile*/
+@media only screen and (min-width: 768px){	
+	.col-m-1{width: 8.33%;}
+	.col-m-2{width: 16.66%;}
+	.col-m-3{width: 25%;}
+	.col-m-4{width: 33.33%;}
+	.col-m-5{width: 41.66%;}
+	.col-m-6{width: 50%;}
+	.col-m-7{width: 58.33%;}
+	.col-m-8{width: 66.66%;}
+	.col-m-9{width: 75%;}
+	.col-m-10{width: 83.33%;}
+	.col-m-11{width: 91.66%;}
+	.col-m-12{width: 100%;}
+	
+	#nav{display:none;}
+}
+
+/* for large devices*/
+@media only screen and (min-width:992px){
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 30%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 60.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 79.5%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+                        
+	#nav{
+		height: 70px;
+		width: 1220px;
+		margin:auto;
+		background-color: #006633;
+		border-radius:10px;
+		display:block;
+	}
+}
+
+#t{
+	width:100%;
+	min-height:45px;
+	background-color:#006633;
+}
+
+.logo_ch{
+    float: left;
+    margin-top: 13px;
+    margin-left: 10px;
+    color: white;
+}
+
+.logo_ch a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: white;
+}
+
+.drowdown-open{
+    color: white;
+    float: right;
+    font-size: 13;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#dorwdown-title{
+    display: none;
+    color: white;
+}
+
+#dorwdown-title:checked~.dorwdown-iteam{
+    display: block;
+}
+
+.dorwdown-iteam{
+    position: absolute;
+    width: 90px;
+    min-height: 57px;
+    margin-top: 10px;
+    background-color: white;
+    display: none;
+}
+
+.dorwdown-iteam ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.dorwdown-iteam ul li{
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.dorwdown-iteam a{
+    padding-left: 10px;
+    color: black;
+    font-size: 15;
+    text-decoration: none;
+}
+
+.cua-hang{
+    height: 45px;
+    float: right;
+    border-right: 2px solid white;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.cua-hang span{
+    padding-right: 15px;
+    font-size: 13;
+    color: white;
+}
+
+.cua-hang select {
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    color: #858585;
+}
+
+.menu{
+    float: left;
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid rgb(146, 146, 146);;
+}
+
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.menu ul li{
+    text-decoration: none;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    padding: 10px 10px;
+}
+
+.menu ul li a{
+    display:block;
+	text-decoration:none;
+	padding:0px 20px;
+    color: black;
+}
+
+.menu ul li:hover{
+    
+    background-color: orange;
+}
+
+#san_pham{
+    width: 85%;
+    height: 800px;
+    float: left;
+}
+
+.from_sp{
+    width: 100%;
+    min-height: auto;
+    margin: auto;
+    background-color: white;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+#don_hang{
+    width: 85%;
+    height: 800px;
+    float: left;
+}
+
+.new{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+
+.nameds{
+    float: left;
+    margin-left: 7%;
+    color: green;
+}
+
+.namebtn{
+    float: right;
+    margin-top: 20px;
+}
+
+.namebtn button{
+    float: right;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    background-color: green
+}
+
+.tk{
+    border: none;
+}
+
+.from-controls .controls {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 3;
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.controls input{
+    width: 100%;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    background-color: rgb(211, 209, 209);
+    color: #858585;
+}
+
+.option{
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.option input{
+    size: 30px;
+}
+
+.controls select {
+    width: 100%;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    background-color: rgb(211, 209, 209);
+    color: #858585;
+}
+
+.controls option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.btn-tk{
+	background-color: rgb(9, 59, 209);
+	box-shadow: 0 4px 6px #00000029;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.list-sp{
+    margin-right: 15px;
+    margin-top: 10px;
+    border: none;
+}
+
+.list-sp table{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    background-color: white;
+}
+
+.list-sp table tr th{
+    border-bottom: 1px solid #ccc;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 15;
+}
+
+.th-anh img{
+    width: 50px;
+}
+
+.tong{
+    width: 100%;
+    height: 50px;
+    background-color: #66FFFF;
+}
+
+.tong p{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.tong p span{
+    color: red;
+}
+
+
+
+
+
+          #myInput {
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 20%;
+            font-size: 16px;
+            border-radius: 100px ;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+          }
+          #myTable tr {
+            border-bottom: 1px solid #ddd;
+          }
+
+          
+          #myTable th, #myTable td {
+            
+            padding: 10px;
+          }
+          
+          #myTable tr {
+            border-bottom: 1px solid #ddd;
+          }
+          
+          #myTable tr.header, #myTable tr:hover {
+            background-color: #f1f1f1;
+          }
